@@ -1,0 +1,33 @@
+{
+	"name": "wasm-exif",
+	"version": "3.0.0",
+	"description": "An EXIF reader using WebAssembly",
+	"keywords": [
+		"color",
+		"rgb",
+		"image",
+		"exif",
+		"jpeg",
+		"webassembly",
+		"browser",
+		"web worker"
+	],
+	"main": "wasm_exif.js",
+	"repository": "",
+	"author": "",
+	"license": "MIT",
+	"private": false,
+	"publishConfig": {
+		"registry": "https://registry.npmjs.org",
+		"access": "public"
+	},
+	"scripts": {
+		"build": "napa && docker run --rm -v $(pwd):/src emscripten/emsdk:latest ./build.sh"
+	},
+	"napa": {
+		"easyexif": "mayanklahiri/easyexif#master"
+	},
+	"devDependencies": {
+		"napa": "^0.4.1"
+	}
+}
