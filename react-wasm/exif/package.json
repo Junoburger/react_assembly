@@ -22,12 +22,12 @@
 		"access": "public"
 	},
 	"scripts": {
-		"build": "napa && docker run --rm -v $(pwd):/src emscripten/emsdk:latest ./build.sh"
+		"build": "napa && ./build.sh"
 	},
 	"napa": {
 		"easyexif": "mayanklahiri/easyexif#master"
 	},
 	"devDependencies": {
-		"napa": "^0.4.1"
+		"napa": "^3.0.0"
 	}
 }

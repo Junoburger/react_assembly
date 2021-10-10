@@ -1,0 +1,1 @@
+{ "docker": "docker run --rm -v $(pwd):/src emscripten/emsdk:latest" }
